@@ -6,6 +6,9 @@ import os
 # you need to import python-dotenv package
 from dotenv import load_dotenv
 
+# import shutil to remove the temp_repo folder
+import shutil
+import stat
 # read parameters from .env file
 load_dotenv()
 
@@ -19,7 +22,7 @@ commit_message = os.environ.get('COMMIT_MESSAGE')
 
 def change_git_file(repo_url, file_path, commit_message):
     # Clone the repository locally
-    repo = Repo.clone_from(repo_url, './temp_repo')
+    repo = Repo.clone_from(repo_url, f'{os.getcwd()}/temp_repo')
 
     # Read the contents of the JSON file - TODO REMOVE THIS ON PRODUCTION
 
@@ -28,15 +31,15 @@ def change_git_file(repo_url, file_path, commit_message):
         print(data)
 
     # Clear the contents of the JSON file
-    data = {}
-    # data = {
-    #   "kruh za dopeko": {
-    #     "\"BAGETA S ČESNOM IN MASLOM SPAR, 175G\"": "4",
-    #     "\"KAJZERICE ZA DOPEKO, S-BUDGET, 6/1, 420G\"": "2",
-    #     "\"BIO PŠENIČNO PEKOVSKO PECIVO ZA DOPEKO, SPAR NATUR*PUR, 4/1, 250G\"": "2",
-    #     "KRUH ZA DOPEKO": "4"
-    #   }
-    # }
+    # data = {}
+    data = {
+      "kruh za dopeko": {
+        "\"BAGETA S ČESNOM IN MASLOM SPAR, 175G\"": "4",
+        "\"KAJZERICE ZA DOPEKO, S-BUDGET, 6/1, 420G\"": "2",
+        "\"BIO PŠENIČNO PEKOVSKO PECIVO ZA DOPEKO, SPAR NATUR*PUR, 4/1, 250G\"": "2",
+        "KRUH ZA DOPEKO": "4"
+      }
+    }
 
     # open file in temp_repo folder and write data to it (through current working directory)
     with open(f'{os.getcwd()}/temp_repo/{file_path}', 'w', encoding="utf-8") as json_file:
@@ -59,15 +62,14 @@ def change_git_file(repo_url, file_path, commit_message):
         repo.close()
         # remove the temp_repo folder and .git folder
         folder_root = 'temp_repo'
+        # remove the read-only flag
 
-        if platform == "win32":
-            os.system('rd /s /q "{}"'.format(folder_root))
+        def remove_readonly(func, path, _):
+            "Clear the readonly bit and reattempt the removal"
+            os.chmod(path, stat.S_IWRITE)
+            func(path)
 
-        # TODO test if works for linux too
-        elif platform == "linux" or platform == "linux2":
-            os.system('rm -rf ' + folder_root)
-        else:
-            raise Exception("Not Windows or Linux detected: '%s'" % platform)
+        shutil.rmtree(folder_root, onerror=remove_readonly)
 
     except GitCommandError as error:
         print(f"Error pushing to remote: {error}")
