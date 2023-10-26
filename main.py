@@ -22,7 +22,8 @@ def change_git_file(repo_url, file_path, commit_message):
     repo = Repo.clone_from(repo_url, './temp_repo')
 
     # Read the contents of the JSON file - TODO REMOVE THIS ON PRODUCTION
-    with open(f'./temp_repo/{file_path}', 'r', encoding="utf-8") as json_file:
+
+    with open(f'{os.getcwd()}/temp_repo/{file_path}', 'r', encoding="utf-8") as json_file:
         data = json.load(json_file)
         print(data)
 
@@ -37,7 +38,8 @@ def change_git_file(repo_url, file_path, commit_message):
     #   }
     # }
 
-    with open(f'./temp_repo/{file_path}', 'w', encoding="utf-8") as json_file:
+    # open file in temp_repo folder and write data to it (through current working directory)
+    with open(f'{os.getcwd()}/temp_repo/{file_path}', 'w', encoding="utf-8") as json_file:
         json.dump(data, json_file)
 
     # Add monthly shopping list to the staging area
@@ -56,16 +58,13 @@ def change_git_file(repo_url, file_path, commit_message):
         repo.git.clear_cache()
         repo.close()
         # remove the temp_repo folder and .git folder
-        folder_path = 'temp_repo/.git'
         folder_root = 'temp_repo'
 
         if platform == "win32":
-            os.system('rd /s /q "{}"'.format(folder_path))
             os.system('rd /s /q "{}"'.format(folder_root))
 
         # TODO test if works for linux too
         elif platform == "linux" or platform == "linux2":
-            os.system('rm -rf ' + folder_path)
             os.system('rm -rf ' + folder_root)
         else:
             raise Exception("Not Windows or Linux detected: '%s'" % platform)
