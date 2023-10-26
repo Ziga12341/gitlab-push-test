@@ -1,0 +1,117 @@
+{
+    "mlečna čokolada": {
+        "\"MLEČNA ČOKOLADA DORINA, KRAŠ, 220G\"": "8",
+        "\"MLEČNA ČOKOLADA DORINA, KRAŠ, 80G\"": "16",
+        "\"MLEČNA ČOKOLADA SWISS CLASSIC, LINDT, 100G\"": "16",
+        "MLEČNA ČOKOLADA": "8"
+    },
+    "mlečna čokolada noisette": {
+        "\"ČOKOLADA NOISETTE DORINA, KRAŠ, 220G\"": "8",
+        "\"ČOKOLADA DORINA NOISETTE, KRAŠ, 80G\"": "16",
+        "\"MLEČNA ČOKOLADA NOISETTE, MILKA MMMAX, 270G\"": "8",
+        "ČOKOLADA NOISETTE": "8"
+    },
+    "mlečna čokolada s celimi lešniki": {
+        "\"ML. ČOKOLADA S CELIMI LEŠNIKI SWISS CLASSIC, LINDT, 100G\"": "12",
+        "\"ČOKOLADA CELI LEŠNIKI NOIR NOISETTES, LINDT, 100G\"": "8",
+        "\"ČOKOLADA Z LEŠNIKI GOLD, LINDT, 300G\"": "5",
+        "MLEČNA ČOKOLADA S CELIMI LEŠNIKI": "8"
+    },
+    "mleko": {
+        "\"ALPSKO MLEKO 3,5% M.M., 6X1L\"": "3",
+        "\"ALPSKO MLEKO POLNOMASTNO 3,5% M.M., 1L\"": "18",
+        "\"TRAJNO MLEKO 3,5% M.M., SPAR, 1L\"": "18",
+        "MLEKO": "18"
+    },
+    "toaletni papir": {
+        "\"TOALETNI PAPIR 4 SLOJNI SILK BALSAM, DELUXE SENSITIVE, PALOMA, 10/1\"": "1",
+        "\"TOALETNI PAPIR, TISKAN IN ODIŠAVLJEN, 3 SLOJNI, EXCLUSIVE, PALOMA, 10/1\"": "1",
+        "\"TOALETNI PAPIR 3SLOJNI EXCLUSIVE PLUS, PALOMA, 10/1\"": "1",
+        "TOALETNI PAPIR": "1"
+    },
+    "sladka smetana": {
+        "\"SLADKA SMETANA, 35% M.M., SPAR, 250ML\"": "1",
+        "\"SLADKA SMETANA, 35% M.M., MU CUISINE, 250ML\"": "1",
+        "\"ALPSKA SMETANA ZA STEPANJE, MU CUISINE, 0,2L\"": "2",
+        "SLADKA SMETANA": "1"
+    },
+    "beli sladkor": {
+        "\"BELI KRISTALNI SLADKOR, AGRAGOLD, 1KG\"": "1",
+        "\"BELI SLADKOR, SPAR, 1KG\"": "1",
+        "BELI SLADKOR": "1"
+    },
+    "arašidi praženi soljeni": {
+        "\"PRAŽENI, RAHLO SOLJENI ARAŠIDI, SPAR VITAL, 300G\"": "3",
+        "\"ARAŠIDI PRAŽENI IN SOLJENI, ODLIČNO, 500G\"": "2",
+        "\"ARAŠIDI PRAŽENI IN SOLJENI, KELLY´S, 225G\"": "4",
+        "ARAŠIDI PRAŽENI SOLJENI": "2"
+    },
+    "arašidi praženi nesoljeni": {
+        "\"ARAŠIDI PRAŽENI, NESOLJENI, BIMED, 250G\"": "4",
+        "\"ARAŠIDI, PRAŽENI IN NESOLJENI, ÜLTJE, 200G\"": "4",
+        "\"ARAŠIDI PRAŽENI IN NESOLJENI PUR, ÜLTJE, 200G\"": "4",
+        "ARAŠIDI PRAŽENI NESOLJENI": "4"
+    },
+    "mandlji jedrca": {
+        "\"MANDLJI, ODLIČNO, 400G\"": "1",
+        "\"MANDLJI JEDRCA, ODLIČNO, 150G\"": "2",
+        "\"MANDLJI JEDRCA, SPAR, 200G\"": "2",
+        "MANDLJI JEDRCA": "1"
+    },
+    "lešniki jedrca": {
+        "\"LEŠNIKI JEDRCA, SPAR, 200G\"": "1",
+        "\"LEŠNIKI BIMED, 150G\"": "1",
+        "\"LEŠNIKI JEDRCA, ODLIČNO, 400G\"": "1",
+        "LEŠNIKI JEDRCA": "1"
+    },
+    "lešniki praženi": {
+        "\"LEŠNIKI PRAŽENI, ODLIČNO, 200G\"": "1",
+        "\"LEŠNIKI BIMED, 150G\"": "1",
+        "\"SLOVENSKI EKOLOŠKI PRAŽENI LEŠNIKI, IZ KAMR´CE, 150G\"": "1",
+        "LEŠNIKI PRAŽENI": "1"
+    },
+    "papirnate brisače": {
+        "\"PAPIRNATE BRISAČE 3 SLOJNE LOVELY, 4/1\"": "1",
+        "\"PAPIRNATE BRISAČE, 3 SLOJNE, PRO FOOD, SUPER CARE, PALOMA, 2/1\"": "1",
+        "\"PAPIRNATE BRISAČE 3-SLOJNE LOVE, 2/1\"": "1",
+        "PAPIRNATE BRISAČE": "1"
+    },
+    "cockta original": {
+        "COCKTA 0,275ML": "18",
+        "COCKTA 1,5L": "6",
+        "COCKTA": "3"
+    },
+    "fanta": {
+        "\"FANTA ORANGE, 6X330ML\"": "2",
+        "\"FANTA ORANGE, 250ML\"": "12",
+        "FANTA": "2"
+    },
+    "sprite": {
+        "\"SPRITE LIMONA IN LIMETA, 250ML\"": "6",
+        "\"SPRITE, 0,5L\"": "6",
+        "SPRITE": "6"
+    },
+    "detergent za pomivanje posode": {
+        "\"DETERGENT ZA POSODO POWER FRESH, PRIL, 450ML\"": "2",
+        "\"DETERGENT ZA POSODO MORSKA SVEŽINA IN LOTUSOV CVET, PRIL, 450ML\"": "2",
+        "\"DETERGENT ZA POSODO POWER LEMON, PRIL, 450ML\"": "2",
+        "DETERGENT ZA POSODO": "2"
+    },
+    "sladoled": {
+        "\"SLADOLED Z OKUSOM BURBONSKE VANILIJE MINI CHOCO BAR, S-BUDGET, 8X50ML\"": "3",
+        "\"SLADOLED NA PALČKI VANILIJA SWEET WAVES, SPAR, 5/1, 285ML\"": "3",
+        "\"SLADOLED NA PALČKI JAGODA VANILIJA SWEET WAVES, SPAR, 5/1, 285ML\"": "3",
+        "SLADOLED": "3"
+    },
+    "sladoled ježek tom": {
+        "\"SLADOLED TOM, LJUBLJANSKE MLEKARNE, 8X70ML\"": "2",
+        "\"SLADOLED JEŽEK, LJUBLJANSKE MLEKARNE, 8X70ML\"": "2",
+        "SLADOLED": "2"
+    },
+    "ovseni napitek": {
+        "\"NAPITEK IZ OVSA S KALCIJEM IN VITAMINI BARISTA, SPAR, 1L\"": "2",
+        "\"BIO OVSENI NAPITEK, SPAR VEGGIE, 1L\"": "2",
+        "\"BIO OVSENI NAPITEK, SPAR NATUR*PUR, 1L\"": "2",
+        "OVSENI NAPITEK": "2"
+    }
+}
