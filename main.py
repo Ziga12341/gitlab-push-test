@@ -24,22 +24,8 @@ def change_git_file(repo_url, file_path, commit_message):
     # Clone the repository locally
     repo = Repo.clone_from(repo_url, f'{os.getcwd()}/temp_repo')
 
-    # Read the contents of the JSON file - TODO REMOVE THIS ON PRODUCTION
-
-    with open(f'{os.getcwd()}/temp_repo/{file_path}', 'r', encoding="utf-8") as json_file:
-        data = json.load(json_file)
-        print(data)
-
     # Clear the contents of the JSON file
-    # data = {}
-    data = {
-      "kruh za dopeko": {
-        "\"BAGETA S ČESNOM IN MASLOM SPAR, 175G\"": "4",
-        "\"KAJZERICE ZA DOPEKO, S-BUDGET, 6/1, 420G\"": "2",
-        "\"BIO PŠENIČNO PEKOVSKO PECIVO ZA DOPEKO, SPAR NATUR*PUR, 4/1, 250G\"": "2",
-        "KRUH ZA DOPEKO": "4"
-      }
-    }
+    data = {}
 
     # open file in temp_repo folder and write data to it (through current working directory)
     with open(f'{os.getcwd()}/temp_repo/{file_path}', 'w', encoding="utf-8") as json_file:
@@ -76,14 +62,3 @@ def change_git_file(repo_url, file_path, commit_message):
 
 
 change_git_file(repo_url, file_path, commit_message)
-
-"""
-{
-  "kruh za dopeko": {
-    "\"BAGETA S ČESNOM IN MASLOM SPAR, 175G\"": "4",
-    "\"KAJZERICE ZA DOPEKO, S-BUDGET, 6/1, 420G\"": "2",
-    "\"BIO PŠENIČNO PEKOVSKO PECIVO ZA DOPEKO, SPAR NATUR*PUR, 4/1, 250G\"": "2",
-    "KRUH ZA DOPEKO": "4"
-  }
-}
-"""
